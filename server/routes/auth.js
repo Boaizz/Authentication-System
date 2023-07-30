@@ -52,10 +52,6 @@ router.post('/register', validatedInput, (req, res) => {
         return res.status(422).json({ errors: errors.array() });
     }
     const { username, password } = req.body;
-    if (!username || !password) {
-        return res.status(400).json({ message: 'Username and password are required.' });
-    }
-
     // Check if the username already exists
     if (users.some(user => user.username === username)) {
         return res.status(409).json({ message: 'Username already exists.' });
