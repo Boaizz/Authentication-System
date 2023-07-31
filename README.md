@@ -1,24 +1,19 @@
-# frontend
+# Authenticate System
+
 
 ## Project setup
+### UI Setup
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
+### Server setup
+```
+cd server
+npm install
+node server.js
+```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
