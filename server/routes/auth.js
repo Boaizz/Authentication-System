@@ -9,7 +9,7 @@ function generateJwtSecret() {
     return crypto.randomBytes(byteLength).toString('hex');
 }
 
-// User data (Replace this with a database in production)
+// User data
 const users = [];
 const changelog = [];
 
